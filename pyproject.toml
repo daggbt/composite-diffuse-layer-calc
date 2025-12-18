@@ -1,0 +1,21 @@
+[project]
+name = "composite-diffuse-layer-calc"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.5.0",
+    "numpy>=1.21.0",
+    "scipy>=1.7.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+testpaths = ["tests"]
+
